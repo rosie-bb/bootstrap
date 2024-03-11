@@ -22,6 +22,9 @@ main {
 .sidebar {
   height: calc(100vh - var(--header));
 }
+.sidebar.sidebar-end {
+  right: 0;
+}
 @media (max-width: 768px) {
   .header {
     z-index: 1;
