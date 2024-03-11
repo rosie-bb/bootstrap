@@ -23,7 +23,7 @@
 </head>
 <body>
   <!-- header -->
-  <header class="navbar position-sticky top-0 bg-dark flex-md-nowrap p-3">
+  <header class="navbar sticky-top bg-dark flex-md-nowrap p-3">
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Company name</a>
     
     <button class="btn ms-auto text-white fs-5"><i class="bi bi-person-fill"></i></button>
@@ -136,11 +136,11 @@
 
           <div class="card-body p-0">
             <div class="code-collapse collapse" id="accordion-example-code" style="">
-              <pre>
-                <code class="language-html overflow-auto" style="height: 300px;">
+              <pre class="overflow-auto" style="height: 300px;">
+                <code class="language-html" style="height: 300px;">
 &#x3C;body&#x3E;
   &#x3C;!-- header --&#x3E;
-  &#x3C;header class=&#x22;navbar position-sticky top-0 bg-dark flex-md-nowrap p-3&#x22;&#x3E;
+  &#x3C;header class=&#x22;navbar sticky-top bg-dark flex-md-nowrap p-3&#x22;&#x3E;
     &#x3C;a class=&#x22;navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white&#x22; href=&#x22;#&#x22;&#x3E;Company name&#x3C;/a&#x3E;
     
     &#x3C;button class=&#x22;btn ms-auto text-white fs-5&#x22;&#x3E;&#x3C;i class=&#x22;bi bi-person-fill&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
@@ -173,23 +173,17 @@
             &#x3C;ul class=&#x22;nav flex-column w-100&#x22;&#x3E;
               &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
                 &#x3C;button class=&#x22;btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed&#x22; data-bs-toggle=&#x22;collapse&#x22; data-bs-target=&#x22;#home-collapse&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
-                  Home
+                  Component
                 &#x3C;/button&#x3E;
                 &#x3C;div class=&#x22;collapse&#x22; id=&#x22;home-collapse&#x22;&#x3E;
                   &#x3C;ul class=&#x22;btn-toggle-nav list-unstyled fw-normal pb-1 small&#x22;&#x3E;
-                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Overview&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Button&#x3C;/a&#x3E;&#x3C;/li&#x3E;
                     &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Updates&#x3C;/a&#x3E;&#x3C;/li&#x3E;
                     &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Reports&#x3C;/a&#x3E;&#x3C;/li&#x3E;
                   &#x3C;/ul&#x3E;
                 &#x3C;/div&#x3E;
               &#x3C;/li&#x3E;
-              &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
-                &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;
-                  &#x3C;i class=&#x22;bi bi-calendar me-1&#x22;&#x3E;&#x3C;/i&#x3E;
-                  Menu
-                &#x3C;/a&#x3E;
-              &#x3C;/li&#x3E;
-            ...
+...
             &#x3C;/ul&#x3E;
           &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;
@@ -232,11 +226,11 @@
 
           <div class="card-body p-0">
             <div class="code-collapse collapse" id="sidebarRight" style="">
-              <pre>
-                <code class="language-html overflow-auto" style="height: 300px;">
+              <pre class="overflow-auto" style="height: 300px;">
+                <code class="language-html">
 &#x3C;body&#x3E;
   &#x3C;!-- header --&#x3E;
-  &#x3C;header class=&#x22;navbar position-sticky top-0 bg-dark flex-md-nowrap p-3&#x22;&#x3E;
+  &#x3C;header class=&#x22;navbar sticky-top bg-dark flex-md-nowrap p-3&#x22;&#x3E;
     &#x3C;a class=&#x22;navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white&#x22; href=&#x22;#&#x22;&#x3E;Company name&#x3C;/a&#x3E;
     
     &#x3C;button class=&#x22;btn ms-auto text-white fs-5&#x22;&#x3E;&#x3C;i class=&#x22;bi bi-person-fill&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
@@ -269,23 +263,17 @@
             &#x3C;ul class=&#x22;nav flex-column w-100&#x22;&#x3E;
               &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
                 &#x3C;button class=&#x22;btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed&#x22; data-bs-toggle=&#x22;collapse&#x22; data-bs-target=&#x22;#home-collapse&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
-                  Home
+                  Component
                 &#x3C;/button&#x3E;
                 &#x3C;div class=&#x22;collapse&#x22; id=&#x22;home-collapse&#x22;&#x3E;
                   &#x3C;ul class=&#x22;btn-toggle-nav list-unstyled fw-normal pb-1 small&#x22;&#x3E;
-                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Overview&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Button&#x3C;/a&#x3E;&#x3C;/li&#x3E;
                     &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Updates&#x3C;/a&#x3E;&#x3C;/li&#x3E;
                     &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Reports&#x3C;/a&#x3E;&#x3C;/li&#x3E;
                   &#x3C;/ul&#x3E;
                 &#x3C;/div&#x3E;
               &#x3C;/li&#x3E;
-              &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
-                &#x3C;a class=&#x22;nav-link&#x22; href=&#x22;#&#x22;&#x3E;
-                  &#x3C;i class=&#x22;bi bi-calendar me-1&#x22;&#x3E;&#x3C;/i&#x3E;
-                  Menu
-                &#x3C;/a&#x3E;
-              &#x3C;/li&#x3E;
-            ...
+...
             &#x3C;/ul&#x3E;
           &#x3C;/div&#x3E;
         &#x3C;/div&#x3E;

@@ -12,9 +12,9 @@ html {
 }
 
 main {
-  height: 100vh;
+  height: calc(100vh - var(--header));
   height: -webkit-fill-available;
-  max-height: 100vh;
+  /* max-height: 100vh; */
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -26,12 +26,9 @@ main {
   right: 0;
 }
 @media (max-width: 768px) {
-  .header {
-    z-index: 1;
-  }
   .sidebar {
     height: 0;
-    z-index: 2;
+    z-index: 1040;
   }
 }
 
