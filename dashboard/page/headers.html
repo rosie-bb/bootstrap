@@ -31,7 +31,7 @@
   <div class="container-fluid">
     <div class="row">
       <!-- sidebar -->
-      <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary position-fixed overflow-auto" data-include="../common/sidebar.html"></div>
+      <div class="sidebar border border-end border-top-0 border-right col-md-3 col-lg-2 p-0 bg-body-tertiary position-fixed overflow-auto" data-include="../common/sidebar.html"></div>
       <!-- .sidebar -->
 
       <!-- content -->
@@ -119,73 +119,76 @@
             <div class="code-collapse collapse" id="sidebarRight" style="">
               <pre class="overflow-auto" style="height: 300px;">
                 <code class="language-html">
-&#x3C;body&#x3E;
-  &#x3C;!-- header --&#x3E;
-  &#x3C;header class=&#x22;navbar sticky-top bg-dark flex-md-nowrap p-3&#x22;&#x3E;
-    &#x3C;a class=&#x22;navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white&#x22; href=&#x22;#&#x22;&#x3E;Company name&#x3C;/a&#x3E;
+&#x3C;!-- header --&#x3E;
+  &#x3C;header class=&#x22;navbar sticky-top bg-white flex-md-nowrap p-3 border border-bottom&#x22;&#x3E;
+    &#x3C;a class=&#x22;navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 d-none d-md-block&#x22; href=&#x22;/dashboard/index.html&#x22;&#x3E;Company name&#x3C;/a&#x3E;
+    &#x3C;a class=&#x22;navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 d-block d-md-none&#x22; href=&#x22;/dashboard/index.html&#x22;&#x3E;C&#x3C;/a&#x3E;
     
-    &#x3C;button class=&#x22;btn ms-auto text-white fs-5&#x22;&#x3E;&#x3C;i class=&#x22;bi bi-person-fill&#x22;&#x3E;&#x3C;/i&#x3E;&#x3C;/button&#x3E;
+    &#x3C;div class=&#x22;d-flex align-items-center&#x22;&#x3E;
+      &#x3C;form class=&#x22;w-100 d-none d-md-inline&#x22; role=&#x22;search&#x22;&#x3E;
+        &#x3C;input type=&#x22;search&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;Search...&#x22; aria-label=&#x22;Search&#x22;&#x3E;
+      &#x3C;/form&#x3E;
 
-    &#x3C;!-- mobile menu icon --&#x3E;
-    &#x3C;ul class=&#x22;navbar-nav flex-row d-md-none&#x22;&#x3E;
-      &#x3C;li class=&#x22;nav-item text-nowrap&#x22;&#x3E;
-        &#x3C;button class=&#x22;btn fs-5&#x22; type=&#x22;button&#x22; data-bs-toggle=&#x22;offcanvas&#x22; data-bs-target=&#x22;#offcanvasExample&#x22; aria-controls=&#x22;offcanvasExample&#x22;&#x3E;
-          &#x3C;i class=&#x22;bi bi-justify text-white&#x22;&#x3E;&#x3C;/i&#x3E;
-        &#x3C;/button&#x3E;
-      &#x3C;/li&#x3E;
-    &#x3C;/ul&#x3E;
-    &#x3C;!-- .mobile menu icon --&#x3E;
+      &#x3C;div class=&#x22;flex-shrink-0&#x22;&#x3E;
+        &#x3C;!-- mobile menu icon --&#x3E;
+          &#x3C;ul class=&#x22;navbar-nav flex-row d-md-none&#x22;&#x3E;
+            &#x3C;li class=&#x22;nav-item text-nowrap&#x22;&#x3E;
+              &#x3C;button class=&#x22;nav-link fs-5&#x22; type=&#x22;button&#x22; data-bs-toggle=&#x22;collapse&#x22; data-bs-target=&#x22;#navbarSearch&#x22; aria-controls=&#x22;navbarSearch&#x22; aria-expanded=&#x22;true&#x22; aria-label=&#x22;Toggle search&#x22;&#x3E;
+                &#x3C;i class=&#x22;bi bi-search&#x22;&#x3E;&#x3C;/i&#x3E;
+              &#x3C;/button&#x3E;
+            &#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;nav-item text-nowrap&#x22;&#x3E;
+              &#x3C;button class=&#x22;btn fs-5&#x22; type=&#x22;button&#x22; data-bs-toggle=&#x22;offcanvas&#x22; data-bs-target=&#x22;#offcanvasExample&#x22; aria-controls=&#x22;offcanvasExample&#x22;&#x3E;
+                &#x3C;i class=&#x22;bi bi-justify&#x22;&#x3E;&#x3C;/i&#x3E;
+              &#x3C;/button&#x3E;
+            &#x3C;/li&#x3E;
+          &#x3C;/ul&#x3E;
+          &#x3C;!-- .mobile menu icon --&#x3E;
+      &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;!-- search --&#x3E;
+    &#x3C;div id=&#x22;navbarSearch&#x22; class=&#x22;navbar-search w-100 collapse&#x22; style=&#x22;&#x22;&#x3E;
+      &#x3C;input class=&#x22;form-control w-100&#x22; type=&#x22;text&#x22; placeholder=&#x22;Search&#x22; aria-label=&#x22;Search&#x22;&#x3E;
+    &#x3C;/div&#x3E;
   &#x3C;/header&#x3E;
   &#x3C;!-- .header --&#x3E;
-
-  &#x3C;!-- container --&#x3E;
-  &#x3C;div class=&#x22;container-fluid&#x22;&#x3E;
-    &#x3C;div class=&#x22;row&#x22;&#x3E;
-      &#x3C;!-- sidebar --&#x3E;
-      &#x3C;div class=&#x22;sidebar sidebar-end border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary position-fixed overflow-auto&#x22;&#x3E;
-        &#x3C;div class=&#x22;offcanvas-md offcanvas-end bg-body-tertiary&#x22; tabindex=&#x22;-1&#x22; id=&#x22;offcanvasExample&#x22; aria-labelledby=&#x22;offcanvasExampleLabel&#x22;&#x3E;
-          &#x3C;div class=&#x22;offcanvas-header&#x22;&#x3E;
-            &#x3C;h5 class=&#x22;offcanvas-title&#x22; id=&#x22;offcanvasExampleLabel&#x22;&#x3E;Company name&#x3C;/h5&#x3E; &#x3C;!-- .logo --&#x3E;
-            &#x3C;button type=&#x22;button&#x22; class=&#x22;btn-close&#x22; data-bs-dismiss=&#x22;offcanvas&#x22; data-bs-target=&#x22;#offcanvasExample&#x22; aria-label=&#x22;Close&#x22;&#x3E;&#x3C;/button&#x3E;
-          &#x3C;/div&#x3E;
-          &#x3C;div class=&#x22;offcanvas-body flex-column&#x22;&#x3E;
-            &#x3C;h6 class=&#x22;sidebar-heading px-3 mt-4 mb-1 text-body-secondary text-uppercase small&#x22;&#x3E;Apps&#x3C;/h6&#x3E;
-
-            &#x3C;ul class=&#x22;nav flex-column w-100&#x22;&#x3E;
-              &#x3C;li class=&#x22;nav-item&#x22;&#x3E;
-                &#x3C;button class=&#x22;btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed&#x22; data-bs-toggle=&#x22;collapse&#x22; data-bs-target=&#x22;#home-collapse&#x22; aria-expanded=&#x22;false&#x22;&#x3E;
-                  Component
-                &#x3C;/button&#x3E;
-                &#x3C;div class=&#x22;collapse&#x22; id=&#x22;home-collapse&#x22;&#x3E;
-                  &#x3C;ul class=&#x22;btn-toggle-nav list-unstyled fw-normal pb-1 small&#x22;&#x3E;
-                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Button&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Updates&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                    &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22; class=&#x22;link-body-emphasis d-inline-flex text-decoration-none rounded&#x22;&#x3E;Reports&#x3C;/a&#x3E;&#x3C;/li&#x3E;
-                  &#x3C;/ul&#x3E;
-                &#x3C;/div&#x3E;
-              &#x3C;/li&#x3E;
-...
-            &#x3C;/ul&#x3E;
-          &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-      &#x3C;/div&#x3E;
-      &#x3C;!-- .sidebar --&#x3E;
-
-      &#x3C;!-- content --&#x3E;
-      &#x3C;main class=&#x22;col-md-9 col-lg-10 px-md-4 mt-3&#x22;&#x3E;
-        ...
-      &#x3C;/main&#x3E;
-      &#x3C;!-- .content --&#x3E;
-    &#x3C;/div&#x3E;
-  &#x3C;/div&#x3E;
-  &#x3C;!-- .container --&#x3E;
-
-&#x3C;/body&#x3E;
                 </code>
               </pre>
             </div>
             <div class="p-4 code-to-copy">
-              ...
+              <!-- header -->
+              <header class="navbar bg-white sticky-top flex-md-nowrap p-3 border border-bottom">
+                <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 d-none d-md-block" href="/dashboard/index.html">Company name</a>
+                <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 d-block d-md-none" href="/dashboard/index.html">C</a>
+                
+                <div class="d-flex align-items-center">
+                  <form class="w-100 d-none d-md-inline" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                  </form>
+
+                  <div class="flex-shrink-0">
+                    <!-- mobile menu icon -->
+                      <ul class="navbar-nav flex-row d-md-none">
+                        <li class="nav-item text-nowrap">
+                          <button class="nav-link fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch" aria-controls="navbarSearch" aria-expanded="true" aria-label="Toggle search">
+                            <i class="bi bi-search"></i>
+                          </button>
+                        </li>
+                        <li class="nav-item text-nowrap">
+                          <button class="btn fs-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <i class="bi bi-justify"></i>
+                          </button>
+                        </li>
+                      </ul>
+                      <!-- .mobile menu icon -->
+                  </div>
+                </div>
+                <!-- search -->
+                <div id="navbarSearch" class="navbar-search w-100 collapse" style="">
+                  <input class="form-control w-100" type="text" placeholder="Search" aria-label="Search">
+                </div>
+              </header>
+              <!-- .header -->
             </div>
           </div>
         </div>
