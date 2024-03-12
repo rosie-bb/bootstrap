@@ -4,11 +4,32 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasExample" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body flex-column">
-    <h6 class="sidebar-heading px-3 mt-4 mb-1 text-body-secondary text-uppercase small">Apps</h6>
+    <h6 class="sidebar-heading px-3 mt-4 mb-1 text-body-secondary text-uppercase small">Pages</h6>
 
     <ul class="nav flex-column w-100">
       <li class="nav-item">
-        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+        <a class="nav-link" href="/dashboard/page/layouts.html">
+          <i class="bi bi-layout-sidebar"></i>
+          Layouts
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dashboard/page/headers.html">
+          <i class="bi bi-card-heading"></i>
+          Headers
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dashboard/page/errors.html">
+          <i class="bi bi-exclamation-triangle"></i>
+          Errors
+        </a>
+      </li>
+    </ul>
+    <h6 class="sidebar-heading px-3 mt-4 mb-1 text-body-secondary text-uppercase small">Modules</h6>
+    <ul class="nav flex-column w-100">
+      <li class="nav-item">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed fw-normal" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
           Component
         </button>
         <div class="collapse" id="home-collapse">
@@ -18,39 +39,6 @@
             <li><a href="#" class="nav-link link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
           </ul>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="bi bi-calendar me-1"></i>
-          Menu
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="bi bi-box2 me-1"></i>
-          Menu
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">  
-          <i class="bi bi-cloud me-1"></i>
-          Disabled
-        </a>
-      </li>
-    </ul>
-    <h6 class="sidebar-heading px-3 mt-4 mb-1 text-body-secondary text-uppercase small">Pages</h6>
-    <ul class="nav flex-column w-100">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
       </li>
     </ul>
     <hr class="my-3">

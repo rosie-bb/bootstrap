@@ -25,6 +25,9 @@ main {
 .sidebar.sidebar-end {
   right: 0;
 }
+.sidebar-heading {
+  font-size: 12px;
+}
 @media (max-width: 768px) {
   .sidebar {
     height: 0;
