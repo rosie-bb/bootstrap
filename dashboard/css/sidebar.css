@@ -33,9 +33,14 @@ main {
 }
 
 .nav-link {
-  font-weight: 600;
+  font-weight: 400;
   color: var(--bs-emphasis-color);
   background-color: transparent;
+}
+
+.nav-link.active {
+  font-weight: 700;
+  color: var(--bs-primary) !important;
 }
 
 .dropdown-toggle { outline: 0; }

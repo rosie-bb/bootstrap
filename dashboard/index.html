@@ -14,6 +14,7 @@
 
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script defer src="./js/include.js"></script> <!-- layout -->
 
   <!-- prism  -->
   <link rel="stylesheet" href="./vendor/prism/prism.css">
@@ -23,95 +24,14 @@
 </head>
 <body>
   <!-- header -->
-  <header class="navbar sticky-top bg-dark flex-md-nowrap p-3">
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">Company name</a>
-    
-    <button class="btn ms-auto text-white fs-5"><i class="bi bi-person-fill"></i></button>
-
-    <!-- mobile menu icon -->
-    <ul class="navbar-nav flex-row d-md-none">
-      <li class="nav-item text-nowrap">
-        <button class="btn fs-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-          <i class="bi bi-justify text-white"></i>
-        </button>
-      </li>
-    </ul>
-    <!-- .mobile menu icon -->
-  </header>
+  <header class="navbar sticky-top bg-dark flex-md-nowrap p-3" data-include="./common/header.html"></header>
   <!-- .header -->
 
   <!-- container -->
   <div class="container-fluid">
     <div class="row">
       <!-- sidebar -->
-      <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary position-fixed overflow-auto">
-        <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Company name</h5> <!-- .logo -->
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasExample" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body flex-column">
-            <h6 class="sidebar-heading px-3 mt-4 mb-1 text-body-secondary text-uppercase small">Apps</h6>
-
-            <ul class="nav flex-column w-100">
-              <li class="nav-item">
-                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                  Component
-                </button>
-                <div class="collapse" id="home-collapse">
-                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Button</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="bi bi-calendar me-1"></i>
-                  Menu
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="bi bi-box2 me-1"></i>
-                  Menu
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">  
-                  <i class="bi bi-cloud me-1"></i>
-                  Disabled
-                </a>
-              </li>
-            </ul>
-            <h6 class="sidebar-heading px-3 mt-4 mb-1 text-body-secondary text-uppercase small">Pages</h6>
-            <ul class="nav flex-column w-100">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <hr class="my-3">
-            <ul class="nav flex-column w-100">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Setting</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign out</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary position-fixed overflow-auto" data-include="./common/sidebar.html"></div>
       <!-- .sidebar -->
 
       <!-- content -->
